@@ -3,7 +3,16 @@
     <title>user</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .valid {
+        color: green;
+    }
+    .invalid {
+        color: red;
+    }
+</style>
 <body>
+    <a href="index.html" style="text-decoration: none;"> <p style="text-align: left; font-size: 350%;"> ← </p></a></body><br>
     <br><br>
 <h2>Insira os seus dados</h2>
 <br>
@@ -15,6 +24,13 @@
 
     <label for="telefone">Telefone:</label>
     <input type="tel" id="telefone" name="telefone">
+
+    <div id="messageDiv"></div>
+    <script src="user.js"></script>
+    <script>
+        var telefoneInput = document.getElementById('telefone');
+        telefoneInput.addEventListener('input', validatetelefoneLabelContent);
+    </script>
 
 </body>
 </html>
