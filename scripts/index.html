@@ -1,25 +1,77 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title> Welcome!</title>
+    <title>Welcome!</title>
     <link rel="stylesheet" href="styleindex.css">
+    <style>
+        body {
+            background-color: #535B52;
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1, h2 {
+            color: #94DACC;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #94DACC;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #76b1a9;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .links a {
+            margin: 10px 0;
+        }
+
+        .images {
+            margin-top: 20px;
+        }
+
+        .images img {
+            max-width: 300px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-    <br>
-    <img src="C:\Users\raquel\Desktop\guiaoW1\cumprimentos-bem-vindo-3bd724.jpg">  <img src="C:\Users\raquel\Desktop\guiaoW1\logo.png">
-    <br>
-    <br>
-    <br>
-    <h2>
-    <a href="reservas.html">Reservas</a><br>                   
-    </h2>
-    <h2>
-    <a href="servicos.html">Serviços</a><br>
-    </h2>
-    <h2>
-    <a href="contactos.html">Contactos</a><br>
-    </h2> 
-    <h2>
-    <a href="user.html">User</a><br>
-    </h2>
+    <div class="container">
+        <div class="images">
+            <img src="C:\Users\raquel\Desktop\guiaoW1\welcome-michigan-barn-weddings-crooked-river-weddings-barn-2.png" alt="Welcome Sign">
+        </div>
+        <div class="links">
+            <h2><a href="reservas.html">Reservas</a></h2>
+            <h2><a href="servicos.html">Serviços</a></h2>
+            <h2><a href="contactos.html">Contactos</a></h2>
+            <h2><a href="user.html">User</a></h2>
+        </div>
+    </div>
 </body>
 </html>
