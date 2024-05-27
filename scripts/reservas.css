@@ -21,7 +21,7 @@ nav a {
 header {
     text-align: center;
     padding: 2em 0;
-    background-color: #ff6f61;
+    background-color: #94DACC;
     color: white;
 }
 
@@ -49,13 +49,30 @@ main {
 }
 
 .option h2 {
-    margin: 0;
+
     font-size: 1.5em;
 }
 
 .option:hover {
-    background-color: #ff6f61;
+    background-color: #94DACC;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+
+.option a {
+    text-decoration: none;
+    color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.option {
+    position: relative;
+}
+
+
