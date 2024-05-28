@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>user</title>
+    <link rel="stylesheet" href="singIn.css">
+    <style>
+        .valid {
+            color: green;
+        }
+        .invalid {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="index.html" class="back-link">←</a>
+    <h2 style="margin-top: -30px; font-size: 2.5em;">Insira os seus dados</h2><br><br><br><br><br>
+    
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <div id="emailMessageDiv"></div><br><br>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone">
+    <div id="telefonemessageDiv"></div><br><br>
+
+    <script src="user.js"></script>
+    <script>
+        var telefoneInput = document.getElementById('telefone');
+        telefoneInput.addEventListener('input', validatetelefoneLabelContent);
+        var emailInput = document.getElementById('email');
+        emailInput.addEventListener('input', validateemailLabelContent);
+    </script>
+</body>
+</html>
