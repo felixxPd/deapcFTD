@@ -29,13 +29,15 @@ h3{
 
 h1{
     text-align: center;
-    margin: 10px 0;
-    font-size: 2em;
+    font-size: 3.5em;
+    margin-top: 10px;
+    
 }
 
 label {
     color: #f0f0f0;
     font-size: 1.2em;
+
 }
 
 input {
@@ -75,15 +77,26 @@ a:hover {
     text-decoration: none;
 }
 
-.container {
-    text-align: center;
+container.dadosPessoais {
+    margin-right:50%;
 }
 
-.form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #6a7268;
-    padding: 20px;
-    border-radius: 10px;
+container.password{
+    margin-left:50%;
+    text-align: center;
+    position:absolute;
+    top: 182px;
 }
+
+input.labels{
+    margin-left:8%;    
+}
+
+input.labels1{
+    margin-left: 2%;
+}
+
+
+
+
+
