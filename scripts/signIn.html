@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>user</title>
+    <title>Sign in</title>
     <link rel="stylesheet" href="singIn.css">
     <style>
         .valid {
@@ -13,27 +13,46 @@
     </style>
 </head>
 <body>
-    
     <a href="index.html" class="back-link">←</a>
-    <h2 style="margin-top: -30px; font-size: 2.5em;">Insira os seus dados</h2><br><br><br><br><br>
+    <h1>PÁGINA DE REGISTO</h1>
+
+<container id="dadosPessoais" class="dadosPessoais">
+ 
+    <h2 style="font-size: 2.0em; margin-top: 90px">Insira os seus dados</h2><br><br><br><br> 
     
     <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome"><br><br>
+    <input type="text" id="nome" name="nome" class="labels">
+    <br><br>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-    <div id="emailMessageDiv"></div><br><br>
+    <input type="email" id="email" name="email" class="labels">
+    <br><br>
 
     <label for="telefone">Telefone:</label>
-    <input type="tel" id="telefone" name="telefone">
-    <div id="telefonemessageDiv"></div><br><br>
+    <input type="tel" id="telefone" name="telefone" class="labels1">
+   <br><br>
+</container>
 
-    <script src="user.js"></script>
+<container id="password" class="password">
+
+    <h2 style="font-size: 2.0em; margin-top: 90px">Defina uma Password</h2><br><br><br>
+
+    <label for="password">Password:</label><br><br>
+    <input type="password" id="password" name="password"><br><br>
+    <div id="passwordmessageDiv"></div><br>
+
+    <label for="cpassword">Confirme a Password:</label><br><br>
+    <input type="password" id="cpassword" name="cpassword">
+    <div id="cpasswordmessageDiv"></div><br><br>
+
+</container>
+
+    <script src="singIn.js"></script>
     <script>
-        var telefoneInput = document.getElementById('telefone');
-        telefoneInput.addEventListener('input', validatetelefoneLabelContent);
-        var emailInput = document.getElementById('email');
-        emailInput.addEventListener('input', validateemailLabelContent);
+        var passwordInput = document.getElementById('password');
+        passwordInput.addEventListener('input', validatepasswordLabelContent);
+        var cpasswordInput = document.getElementById('cpassword');
+        cpasswordInput.addEventListener('input', validatecpasswordLabelContent);
     </script>
 </body>
 </html>
