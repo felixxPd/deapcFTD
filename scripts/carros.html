@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carros.css">
+    <title>Aluga connosco um carro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="back-button" onclick="history.back()">Voltar</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Aluga um carro em Portugal</h1>
+            <form class="search-form" action="resultados-carros.html" method="get">
+                <div class="form-group">
+                    <label for="local">Local de Aluguer</label>
+                    <select id="local" name="local" required>
+                        <option value="">Selecione o distrito</option>
+                        <option value="Aveiro">Aveiro</option>
+                        <option value="Beja">Beja</option>
+                        <option value="Braga">Braga</option>
+                        <option value="Bragança">Bragança</option>
+                        <option value="Castelo Branco">Castelo Branco</option>
+                        <option value="Coimbra">Coimbra</option>
+                        <option value="Évora">Évora</option>
+                        <option value="Faro">Faro</option>
+                        <option value="Guarda">Guarda</option>
+                        <option value="Leiria">Leiria</option>
+                        <option value="Lisboa">Lisboa</option>
+                        <option value="Portalegre">Portalegre</option>
+                        <option value="Porto">Porto</option>
+                        <option value="Santarém">Santarém</option>
+                        <option value="Setúbal">Setúbal</option>
+                        <option value="Viana do Castelo">Viana do Castelo</option>
+                        <option value="Vila Real">Vila Real</option>
+                        <option value="Viseu">Viseu</option>
+                        <option value="Ilha da Madeira">Ilha da Madeira</option>
+                        <option value="Ilha dos Açores">Ilha dos Açores</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="data-recolha">Data de entrega </label>
+                    <input type="date" id="data-recolha" name="data-recolha" required>
+                </div>
+                <div class="form-group">
+                    <label for="data-devolucao">Data de Devolução</label>
+                    <input type="date" id="data-devolucao" name="data-devolucao" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo-carro">Tipo de Carro</label>
+                    <select id="tipo-carro" name="tipo-carro" required>
+                        <option value="economical">Económico</option>
+                        <option value="familiar">Familiar</option>
+                        <option value="4x4">4x4</option>
+                        <option value="coupe">Coupé</option>
+                        <option value="luxury">Luxo</option>
+                        <option value="suv">SUV</option>
+                        <option value="classical">Clássico</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-button">Pesquisar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
