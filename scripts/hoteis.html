@@ -1,24 +1,40 @@
-
+<!DOCTYPE html>
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="hoteis.css">
-
-    <a href="index.html" class="back-link">← Voltar</a>
-
     <title>Reserva de Hotéis</title>
-    
 </head>
 <body>
-    <section class="hero">
-        <h1>Encontra o hotel perfeito para a tua próxima viagem</h1>
-        <div class="search-form">
-            <input type="text" placeholder="Destino">
-            <input type="date" placeholder="Check-in">
-            <input type="date" placeholder="Check-out">
-            <input type="number" placeholder="Hóspedes">
-            <button type="submit">Pesquisar</button>
-        </div>
-    </section>
+    <header>
+        <nav>
+            <button class="back-button" onclick="history.back()">Voltar</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Encontra o hotel perfeito para a tua próxima viagem</h1>
+            <form class="search-form" action="resultados.html" method="get">
+                <div class="form-group">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="destino" name="destino" placeholder="Destino" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" name="checkin" placeholder="Check-in" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" name="checkout" placeholder="Check-out" required>
+                </div>
+                <div class="form-group">
+                    <label for="hospedes">Hóspedes</label>
+                    <input type="number" id="hospedes" name="hospedes" placeholder="Hóspedes" min="1" required>
+                </div>
+                <button type="submit" class="search-button">Pesquisar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
